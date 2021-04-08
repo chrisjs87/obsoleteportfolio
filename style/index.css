@@ -43,9 +43,13 @@ blockquote, q {
 
 *{
     border: 1px solid grey; 
+    max-width: 100%;
     /* in order to keep track of what is and is not finished! */
     /* fixed by entering */
     /* border: 0    ?????? */
+}
+html{
+    font-size:62.5%;
 }
 
 .top{
@@ -76,14 +80,24 @@ nav a{
     background-position:top;
 } */
 
-.largeImageStorySnippet{
+.imageStory{
     display:flex;
+    
     /* I need to create two divided columns. There are 2 divs here! */
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-.homeImageContainer img{
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+}
+.right{
+    
+}
+.right a{
+    background-color: green;
+    color: #fff;
+    font-size: 2rem;
+    border-color:black;
+}
+.left img{
     width:30%;
     /* image-orientation:90deg flip; */
 
@@ -93,7 +107,17 @@ footer{
     background-color:lightgrey;
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+    justify-content:center;
+    align-items:center;
+}
+footer h2{
+    font-size: 2rem;
+}
+footer a{
+    background-color: green;
+    color: #fff;
+    font-size: 2rem;
+    border-color:black;
 }
 
 
