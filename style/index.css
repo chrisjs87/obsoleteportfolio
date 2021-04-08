@@ -100,7 +100,7 @@ nav a{
 }
 
 .left img{
-    width:30%;
+    width:100%;
     
 
 }
@@ -129,13 +129,18 @@ nav a{
 
 .gallery div{
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
     background-color:blue;
+    border:30% solid white;
+
 }
 
 
 .gallery p{
     background-color:red;
+    /* display:flex; */
+    /* justify-content: space-around; */
+    width:20%;
 }
 
 /* .gallery img{
