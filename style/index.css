@@ -72,24 +72,25 @@ nav a{
     font-size: 2rem;
     border-color:black;
 }
-/* .homeImage{
-    background-image: url(https://images.unsplash.com/photo-1610072163764-93cab353a095?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80);
-    height:40vh;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:top;
-} */
 
 .imageStory{
     display:flex;
-    
+    align-items:center;
     /* I need to create two divided columns. There are 2 divs here! */
 
-    /* flex-direction: row;
-    justify-content: space-evenly; */
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imageStory div{
+    width:38%;
 }
 .right{
-    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.right h2{
+    font-size:2rem;
 }
 .right a{
     background-color: green;
@@ -97,18 +98,79 @@ nav a{
     font-size: 2rem;
     border-color:black;
 }
+
 .left img{
     width:30%;
-    /* image-orientation:90deg flip; */
+    
 
 }
+/* image-orientation:90deg flip; */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    border:10px solid yellow;
+}
+
+.gallery div{
+    display:flex;
+    justify-content:center;
+    background-color:blue;
+}
+
+
+.gallery p{
+    background-color:red;
+}
+
+/* .gallery img{
+    width:21%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* I'm pretty happy with the footer */
 footer{
     background-color:lightgrey;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    padding:3%;
 }
 footer h2{
     font-size: 2rem;
