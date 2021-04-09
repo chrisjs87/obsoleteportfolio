@@ -44,9 +44,6 @@ blockquote, q {
 *{
     /* border: 1px solid grey;  */
     max-width: 100%;
-    /* in order to keep track of what is and is not finished! */
-    /* fixed by entering */
-    /* border: 0    ?????? */
 }
 html{
     font-size:62.5%;
@@ -76,8 +73,6 @@ nav a{
 .imageStory{
     display:flex;
     align-items:center;
-    /* I need to create two divided columns. There are 2 divs here! */
-
     flex-direction: row;
     justify-content: space-around;
 }
@@ -104,20 +99,6 @@ nav a{
     
 
 }
-/* image-orientation:90deg flip; */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .gallery{
     display:flex;
@@ -135,29 +116,6 @@ nav a{
     width:20%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* I'm pretty happy with the footer */
 footer{
     background-color:lightgrey;
     display:flex;
