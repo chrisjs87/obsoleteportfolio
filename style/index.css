@@ -42,8 +42,8 @@ blockquote, q {
 /* General Styling */
 
 *{
-    /* border: 1px solid grey;  */
-    max-width: 100%;
+    box-sizing:border-box;
+    max-width:100%;
 }
 html{
     font-size:62.5%;
@@ -54,6 +54,10 @@ html{
     padding-left:5%;
     padding-top:2%;
 }
+/* .top nav{
+    display:flex;
+    justify-content:center;
+} */
 h1{
     font-size: 3rem;
 }
@@ -67,37 +71,57 @@ nav a{
     background-color: green;
     color: #fff;
     font-size: 2rem;
-    border:2px solid black;
+    border:1px solid black;
+    text-decoration:none;
+    width:8%;
+    display:flex;
+    justify-content:center;
 }
 
-.imageStory{
+.mid{
     display:flex;
     align-items:center;
     flex-direction: row;
     justify-content: space-around;
 }
-.imageStory div{
+.mid div{
     width:38%;
 }
 .right{
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
 }
 .right h2{
-    font-size:2rem;
+    font-size:2.9rem;
 }
 .right a{
     background-color: green;
     color: #fff;
     font-size: 2rem;
     border-color:black;
+    text-decoration:none;
+    width:24%;
+    display:flex;
+    justify-content:center;
+    margin-top: 2%;
+    padding:1%;
+    border-radius:5px;
+}
+.right p{
+    margin:2% 0;
+    font-size:2rem;
 }
 
+.left{
+    display:flex;
+    
+}
 .left img{
     width:100%;
-    
-
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 .gallery{
@@ -112,7 +136,6 @@ nav a{
 }
 
 .gallery p{
-    background-color:red;
     width:20%;
 }
 
@@ -132,7 +155,85 @@ footer a{
     color: #fff;
     font-size: 2rem;
     border-color:black;
+    text-decoration:none;
+    margin-top: 1%;
+    padding:1%;
+    border-radius:10px;
+}
+
+#end{
+    display:flex;
+    justify-content:flex-end;
+    margin:.5% 2%;
+}
+#end a{
+    text-decoration:none;
+    margin: 0 .3%;
 }
 
 
+/* Responsive Design */
+/* Mobile */
+@media(max-width:500px){
+    .top{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:0;
+        padding:0;
+    }
+    .top nav{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        margin:0;
+        padding:0;
+        width:25%;
+    }
+    .top a{
+        width:100%;
+        margin:1% 0;
+    }
 
+    .mid{
+        flex-direction:column;
+        justify-content:center;
+        width:100%;
+    }
+    .mid div{
+        width:100%;
+    }
+    .left{
+        
+        width:100%;
+
+    }
+    .left img{
+        width:100%;
+
+    }
+    .right{
+        width:100%;
+        align-items:center;
+    }
+    .right p{
+        width:60%;
+        text-align:center;
+    }
+
+    .gallery div{
+        display:flex;
+        flex-direction:column;
+        width:45%;
+        align-items: center;
+        height:40vh;
+    }
+    .gallery p{
+        width:60%;
+        display:flex;
+        justify-content:center;
+        font-size: 1.5rem;
+        margin-top:2.4%;
+    }
+}
